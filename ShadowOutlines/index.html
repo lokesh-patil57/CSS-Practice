@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shadow and outlines</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .box {
+        border: 2px solid black;
+        padding: 45px;
+        margin: 10px;
+        box-shadow: 2px 3px 5px 3px #15e0ff;
+      }
+      .text {
+        text-shadow: 11px 4px 2px #f90000;
+      }
+      .som {
+        outline: 2px solid black;
+        border: 3 px solid purple;
+        outline-offset: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">I am Box</div>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, porro quia.
+      Neque, itaque ullam aut fugiat quod illo, eos sequi mollitia voluptates
+      libero culpa, molestiae dolorum nemo asperiores suscipit tenetur commodi
+      nesciunt! Nulla repellendus architecto, nisi, ab nihil vel soluta quasi
+      quae, dolorem deleniti earum.
+    </p>
+    <p class="som">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt porro
+      nulla, dicta minima libero ab illo aliquam voluptatibus beatae deleniti
+      vero. Reprehenderit, ipsum!
+    </p>
+  </body>
 </html>
