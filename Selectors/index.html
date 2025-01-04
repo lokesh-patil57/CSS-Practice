@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors in CSS</title>
+    <style>
+      /* Child selector */
+      div > p {
+        color: red;
+        background-color: yellow;
+      }
+      /* Decendent selector */
+      div p {
+        color: black;
+        background-color: aqua;
+      }
+      /* Class selector */
+      .red {
+        color: black;
+        background-color: yellow;
+      }
+      /* ID selector */
+      #green {
+        color: white;
+        background-color: black;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* Pseudo selector */
+      p:first-child {
+        color: brown;
+        background-color: blanchedalmond;
+      }
+      a:visited {
+        color: black;
+      }
+      a:link {
+        background-color: aquamarine;
+      }
+      a:active {
+        background-color: rgb(205, 76, 98);
+      }
+      a:hover {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Types of Selectors</h1>
+    <div class="red">I am class selector</div>
+    <div id="green">I am ID selector</div>
+    <div>
+      <p>I am first one</p>
+      <p>I am Second one</p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis modi,
+        architecto nesciunt illum totam rerum, voluptates nisi obcaecati maxime
+        vero quis nulla quas. Iure illo aliquam culpa debitis at esse magni fuga
+        veritatis voluptates. Explicabo vitae ducimus autem quia voluptates
+        exercitationem rerum commodi, tenetur quam.
+      </p>
+    </div>
+    <div>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odio
+          dolorum voluptatum ex! Eum sapiente quo ratione ducimus error facilis.
+        </p>
+      </article>
+    </div>
+    <a href="http://google.com">Open Google</a>
+    <a href="http://www.facebook.com"> Go to Facebook</a>
+  </body>
+</html>
