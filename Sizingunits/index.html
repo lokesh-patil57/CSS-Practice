@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        div{
-            border: 2px solid black ;
-            width: 233px;
-        }
+        /* for REM sizing */
+        /* html{
+            font-size: 12px;
+        } */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        height: 10vh;
+        margin: 23px auto;
+        background-color: aquamarine;
+      }
+      .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        height: 80vh;
+        font-size: 18px;
+        margin: 23px auto;
+        background-color: aquamarine;
+      }
+      .container div{
+        border: 2px solid rgb(19, 223, 63);
+        /* font-size: 2em; */
+        width: 50%;
+        /* font-size: 2rem; */
+
+      }
+      .container div div{
+        border: 2px solid rgb(238, 7, 7);
+        width: 50%;
+      }
+      .con{
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        /* height: 10vh; */
+        margin: 23px auto;
+        font-size: 22px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="box">I am the Box</div>
-    
-</body>
+    <div class="container">
+        <div>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, qui rem facere nobis quia molestiae ex similique laboriosam expedita, ab sequi? Sequi repellat ipsa cum molestias, voluptatem nostrum! Accusantium ipsum dolorum cumque! Sunt laborum odio provident amet magni, iusto consectetur rem rerum. Officia, error! Tempore. 
+           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos nam autem ea architecto voluptatum exercitationem, fuga, in cupiditate neque fugiat, saepe nulla.</div>
+        </div>
+        
+    </div>
+    <div class="con">I am A Container</div>
+  </body>
 </html>
