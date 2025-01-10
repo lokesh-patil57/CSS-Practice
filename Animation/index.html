@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 30vw;
+            background-color: rgb(64, 189, 23);
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            font-size: 10px;
+            background-color: aqua;
+            /* animation-name: lokimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0, 0, 0, 0.98);
+            animation-delay: 1s; */
+            animation: lokimation 3s cubic-bezier(0, 0, 0, 0.98) 1s infinite;
+
+        }
+
+        @keyframes lokimation{
+            from{
+
+            }
+            to{
+                transform: translate(1000px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lucky</div>
+    </div>
+</body>
+</html>
