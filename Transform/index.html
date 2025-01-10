@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Properties </title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        .container{
+            border: 2px solid black;
+            height: 80vh;
+            background-color: rgb(212, 233, 252);
+        }
+        .box{
+            border: 2px solid blue;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 165, 29);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: translate(50%); */
+            /* transform: rotate(55deg); */
+            /* transform: rotateY(102deg); */
+            /* transform: scale(1.5); */
+            /* transform: skew(34deg); */
+            transform: translateY(100%) skew(34deg) translateX(50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lucky</div>
+    </div>
+</body>
+</html>
