@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition oroperty</title>
+    <style>
+        .container{
+            height: 70vh;
+            background-color: antiquewhite;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            transition: all 3s cubic-bezier(0, 0.63, 0.67, 1.07) 1s;
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>
